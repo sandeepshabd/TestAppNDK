@@ -9,6 +9,10 @@
 
 #endif //NDKTESTAPP1_HELLO_JNI_H
 
-jstring
+extern "C" {
+JNIEXPORT jstring
         Java_apps_sandeep_com_ndktestapp1_MainActivity_helloJni( JNIEnv* env,
-                                                     jobject thiz );
+                                                                 jobject thiz );
+};
+
+

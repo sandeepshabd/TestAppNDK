@@ -6,9 +6,9 @@
 #include <string.h>
 #include <jni.h>
 
-jstring
+JNIEXPORT jstring
         Java_apps_sandeep_com_ndktestapp1_MainActivity_helloJni( JNIEnv* env,
                                                           jobject thiz ){
-    return (*env)->NewStringUTF(env, "Hello JNI ! ");
+    return env->NewStringUTF( "Hello JNI from c++! ");
 
 }
