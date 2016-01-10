@@ -23,10 +23,14 @@ model {
      */
     android.ndk {
         moduleName = "hello-jni"
+        cppFlags.add("-frtti") //RunTime Type Information
+        cppFlags.add("-fexceptions")
+        ldLibs.addAll(["android", "log"])
+
         /*
          * Other ndk flags configurable here are
          * cppFlags.add("-fno-rtti")
-         * cppFlags.add("-fno-exceptions")
+         * cppFlags.add("-fexceptions")
          * ldLibs.addAll(["android", "log"])
          * stl       = "system"
          */
