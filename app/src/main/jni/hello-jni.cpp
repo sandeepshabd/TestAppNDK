@@ -15,6 +15,6 @@ JNIEXPORT jstring
         Java_apps_sandeep_com_ndktestapp1_MainActivity_helloJni( JNIEnv* env,
                                                           jobject thiz ){
     LOGI( "******Logging the hello world*******" );
-    return env->NewStringUTF( "Hello JNI from c++ !! ");
+    return env->NewStringUTF( "Hello JNI. Gettng ready for OpenGl 3!! ");
 
 }
